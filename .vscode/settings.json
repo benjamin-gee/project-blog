@@ -1,4 +1,6 @@
 {
     "prettier.configPath": "~/src/joy-of-react/project-blog/.prettierrc",
-    "editor.detectIndentation": false
+    "editor.detectIndentation": false,
+    "prettier.jsxSingleQuote": true,
+    "prettier.singleQuote": true
 }

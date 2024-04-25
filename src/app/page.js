@@ -1,8 +1,7 @@
-import React from "react";
+import React from 'react';
+import BlogSummaryCard from '@/components/BlogSummaryCard';
 
-import BlogSummaryCard from "@/components/BlogSummaryCard";
-
-import styles from "./homepage.module.css";
+import styles from './homepage.module.css';
 
 function Home() {
     return (
