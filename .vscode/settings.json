@@ -1,0 +1,4 @@
+{
+    "prettier.configPath": "~/src/joy-of-react/project-blog/.prettierrc",
+    "editor.detectIndentation": false
+}
