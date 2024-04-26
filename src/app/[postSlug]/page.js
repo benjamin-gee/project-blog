@@ -5,6 +5,7 @@ import styles from './postSlug.module.css';
 import { loadBlogPost } from '@/helpers/file-helpers';
 import { BLOG_TITLE } from '@/constants';
 import CodeSnippet from '@/components/CodeSnippet';
+import { DivisionGroupsDemo } from '@/components/DivisionGroupsDemo';
 
 export const generateMetadata = async ({ params }) => {
     const { frontmatter } = await loadBlogPost(params.postSlug);
@@ -23,7 +24,10 @@ async function BlogPost({ params }) {
                 publishedOn={frontmatter.publishedOn}
             />
             <div className={styles.page}>
-                <MDXRemote source={content} components={{ pre: CodeSnippet }} />
+                <MDXRemote
+                    source={content}
+                    components={{ pre: CodeSnippet, DivisionGroupsDemo }}
+                />
             </div>
         </article>
     );

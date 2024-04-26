@@ -1,2 +1,3 @@
-export * from './DivisionGroupsDemo';
-export { default } from './DivisionGroupsDemo';
+'use client';
+import dynamic from 'next/dynamic';
+export const DivisionGroupsDemo = dynamic(() => import('./DivisionGroupsDemo'));
